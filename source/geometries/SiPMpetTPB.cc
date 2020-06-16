@@ -110,7 +110,7 @@ namespace nexus {
     G4Material* TPB = MaterialsList::TPB();
     if (_phys) {
       G4cout << "TPB with refraction index equal to LXe" << G4endl;
-      TPB->SetMaterialPropertiesTable(OpticalMaterialProperties::TPB_LXe(_decay_time));
+      TPB->SetMaterialPropertiesTable(OpticalMaterialProperties::TPB(_decay_time));
     } else {
       G4cout << "TPB with constant refraction index equal to 1.7 "<< G4endl;
       TPB->SetMaterialPropertiesTable(OpticalMaterialProperties::TPB_LXe_nconst(_decay_time));
